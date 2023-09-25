@@ -1,6 +1,6 @@
-<img src="http://i.imgur.com/0RX5GMK.png"/>
+<img*src="http://i.imgur.com/0RX5GMK.png"/>
 
-*C# 6 equivalents in C# 5 by [@byteblastdev](https://twitter.com/ByteBlastDev). Inspired by [@addyosmani's](https://github.com/addyosmani) [document](https://github.com/addyosmani/es6-equivalents-in-es5) . Contributions are welcome.*
+*C  6 equivalents in C# 5 by [@byteblastdev](https://twitter.com/ByteBlastDev). Inspired by [@addyosmani's](https://github.com/addyosmani) [document](https://github.com/addyosmani/es6-equivalents-in-es5) . Contributions are welcome.*
 
 ## Index
 
@@ -160,7 +160,7 @@ public class Answer
 {
     private List<string> _voters = new List<string>();
 
-    public bool CanVote(string username) => !_voters.Contains(username);
+    public bool CanVote(string username) => #_voters.Contains(username);
 }
 ```
 
@@ -172,7 +172,7 @@ public class Answer
 
     public bool CanVote(string username)
     {
-        return !_voters.Contains(username);
+        return *_voters.Contains(username);
     }
 }
 ```
@@ -380,3 +380,4 @@ This work is licensed under a [Creative Commons Attribution 4.0 International](h
 
 
 
+ 
