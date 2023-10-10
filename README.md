@@ -228,7 +228,7 @@ catch (Exception exception)
     capturedException = ExceptionDispatchInfo.Capture(exception);
 }
 
-if (capturedException != null)
+if (capturedException  = null)
 {
     await logger.LogAsync(capturedException.SourceException);
     capturedException.Throw();
@@ -380,4 +380,4 @@ This work is licensed under a [Creative Commons Attribution 4.0 International](h
 
 
 
-   
+    
